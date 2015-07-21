@@ -19,3 +19,12 @@ The script is simple, naive, but works.
 
 5.done
 
+##Effect
+
+Your every commit will be recorded into your private repo.
+
+When you push your work repo, you will also do push in your private log repo by the script.
+
+Your work will not be shown into GitHub except your commit log, but your commit history will be lighted.
+
+##Enjoy and show how hard you are working to the world. 
