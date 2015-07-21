@@ -14,7 +14,7 @@ if [[ "$1" == "commit" ]]; then
 elif [[ "$1" == "push" ]]; then
 	/usr/bin/git push $2 $3 $4 $5 $6 $7
 	cd "$WORK_LOG_DIR"
-	/usr/bin/git push>/dev/null 2>&1
+	/usr/bin/git push>/dev/null 2>&1 &
 else
 	/usr/bin/git $1 $2 $3 $4 $5 $6 $7
 fi
