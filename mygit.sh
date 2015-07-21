@@ -10,7 +10,7 @@ if [[ "$1" == "commit" ]]; then
 	cd "$WORK_LOG_DIR"
 	/usr/bin/git add --all
 	CURTIME=$(date '+%Y-%m-%d at %H:%M:%S')
-	/usr/bin/git commit -m "logs on $PWD on $CURTIME">/dev/null 2>&1
+	/usr/bin/git commit -m "logs on $PWD on $CURTIME">/dev/null 2>&1 &
 elif [[ "$1" == "push" ]]; then
 	/usr/bin/git push $2 $3 $4 $5 $6 $7
 	cd "$WORK_LOG_DIR"
